@@ -1,0 +1,33 @@
+<!-- calculator.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    input, button { padding: 10px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Basic Calculator</h2>
+  <input id="num1" type="number" placeholder="First Number">
+  <input id="num2" type="number" placeholder="Second Number"><br>
+  <button onclick="calculate('+')">Add</button>
+  <button onclick="calculate('-')">Subtract</button>
+  <button onclick="calculate('*')">Multiply</button>
+  <button onclick="calculate('/')">Divide</button>
+  <h3 id="result">Result: </h3>
+
+  <script>
+    function calculate(op) {
+      let a = parseFloat(document.getElementById('num1').value);
+      let b = parseFloat(document.getElementById('num2').value);
+      let result = 0;
+      if (op === '+') result = a + b;
+      else if (op === '-') result = a - b;
+      else if (op === '*') result = a * b;
+      else if (op === '/') result = b !== 0 ? a / b : 'Error';
+      document.getElementById('result').innerText = 'Result: ' + result;
+    }
+  </script>
+</body>
+</html>
