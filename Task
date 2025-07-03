@@ -1,0 +1,21 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    .card { background: white; padding: 20px; max-width: 500px; margin: auto; border-radius: 10px; }
+    img { width: 100px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Name: John Doe</h2>
+    <p><strong>Bio:</strong> Aspiring web developer passionate about frontend design.</p>
+    <img src="profile.jpg" alt="Profile Image">
+    <p><strong>Hobbies:</strong> Coding, Reading, Music</p>
+    <p><strong>Contact:</strong> john@example.com</p>
+  </div>
+</body>
+</html>
